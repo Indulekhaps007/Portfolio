@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#technical-skills">Technical Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="intro-text">
+                <h1>Indulekha</h1>
+                <p>Hi! I'm a third-year B.Tech student specializing in Computer Science Engineering at VNIT Nagpur Passionate about Web Development, Data Structures, and Algorithms. </p>
+                <a href="#about" class="btn-primary">Let’s get started &#8594;</a>
+            </div>
+            <div class="profile-image">
+                <img src="INDULEKHA.jpg" alt="Your Name">
+            </div>
+        </div>
+    </section>
+    
+<section id="about" class="about-section">
+    <div class="about-content">
+        <img src="INDULEKHA.jpg" alt="Profile Picture" class="about-image">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Indulekha, a third-year B.Tech student specializing in Computer Science Engineering at VNIT Nagpur. 
+                Passionate about Web Development, Data Structures, and Algorithms. 
+                I enjoy creating efficient and user-friendly applications .
+                My journey in computer science has been driven by my curiosity and a desire to solve complex problems with elegant solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="projects-text">
+            <h2>My Projects</h2>
+            <div class="project" onclick="openProject('https://github.com/Indulekhaps007/DSPD-Projects/blob/116e1fcf5fc74fd0e0de1f3780faca53e6c143e1/A1.c')">
+                <h3>Project 1</h3>
+                <p> Handling data for people in a state <br> 
+                    Used singly linked list in C language to create Aadhar List, PAN List, Bank Accounts List and LPG List. <br>
+                    Implemented functions such as printing details of people who have Aadhar but no PAN, people having multiple          
+                    PAN numbers and so on. <br>
+                    File handling was also used.  <span class="tag">C Language</span></p>
+            </div>
+            <div class="project" onclick="openProject('https://github.com/Indulekhaps007/DSPD-Projects/blob/116e1fcf5fc74fd0e0de1f3780faca53e6c143e1/A2.c')">
+                <h3>Project 2</h3>
+                <p> Management of shared expenses  <br>
+                    Project was to implement an application that allows users to manage shared expenses amongst a group of people. <br>
+                    Data Structure used was array of structures and programming language used was C. <br>
+                    The main goal was to calculate the net amount owed or to be paid by each user in the group. <br>
+                    Implemented functions such as AddUser, AddExpense, AmountOwed, AmountToPay, UserBalances, DeleteUser, 
+                    DeleteExpense.     <span class="tag">C Language </span></p>
+            </div>
+            <div class="project" onclick="openProject('https://github.com/Indulekhaps007/DSPD-Projects/blob/116e1fcf5fc74fd0e0de1f3780faca53e6c143e1/heap.c')">
+                <h3>Project 3</h3>
+                <p> Heap Management Scheme <br>
+                    Used C language to implement my own allocate and free functions and ensured that the adjacent free blocks are 
+                    merged together using the First Fit strategy.  <span class="tag">C Language </span></p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technical-skills">
+        <div class="projects-text">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+            <i class="devicon-c-plain colored"></i>
+        </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="projects-text">
+                <h2>Contact Me</h2>
+                <p> <a href="mailto:indulekhaps007@gmail.com" class="contact-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="LinkedIn" width="40" height="40">
+                </a>
+                </p>
+                <p> 
+                    <a href="https://www.linkedin.com/in/indulekha-ps-7143aa309/" target="_blank" class="contact-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" height="40">
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/Indulekhaps007" target="_blank" class="contact-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="40" height="40">
+                    </a>
+                </p>
+                <h4>Send a Message !</h4>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enter</button>
+            </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p> 2024 My Portfolio</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
